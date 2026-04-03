@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<title> Fairy Name Genarator </title>
+</head>
+
+
+<body  style="background-color: #87AE73;">
+<br>
+<center>
+<h1 style ="color: #FFC0CB;"> <i> Fairy Name Genarator </i></h1>
+<h2 style="color: #FFC0CB;"> <i>Simply click to randomly generate a magical fairy name and prefix!</i> </h2>
+<br>
+<br>
+
+<button style = "background-color: bisque;"
+<button onclick="gName()">Click to generate name</button>
+<br>
+<br> <br> <br> <br> <br> <br> <br> 
+<p style="font-size:30px; color:#FFC0CB; font-style:italic"; id ="displayNames"></p>
+<img src="vin.png" alt="" title="green" width="400" style="position: relative; top: -75px">
+<script>
+function gName(){
+const names1 = ["Oceanic", "Flowering", "Sapphire", "Ruby", "Mystical", "Magical", "Mysterious", "Sparkling", "Snowy", "Icy"];
+const names2 =["Fay", "Fairy", "River", "Stream", "Gem", "Fern", "Ivy", "Aspen", "Pixie", "Lyric", "Fawn", "Sage", "Indigo", "Sparrow", "Daisy"];
+
+const name1 = names1[Math.floor(Math.random()* names1.length )];
+const name2 = names2[Math.floor(Math.random()* names2.length )];
+
+document.getElementById("displayNames").innerHTML = name1+" " + name2;
+}
+</script>
+
+
+
+
+</center>
+</body>
+</html>
+
